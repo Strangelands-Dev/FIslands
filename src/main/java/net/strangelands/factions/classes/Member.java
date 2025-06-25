@@ -1,4 +1,4 @@
-package me.halfquark.fislands.classes;
+package net.strangelands.factions.classes;
 
 import java.util.ArrayList;
 import java.util.HashMap;

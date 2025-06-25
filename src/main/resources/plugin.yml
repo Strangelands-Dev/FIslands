@@ -1,6 +1,6 @@
 name: FIslands
 version: 1.0
-main: me.halfquark.fislands.FIslands
+main: net.strangelands.factions.Factions
 api-version: 1.21.4
 depend: [WorldEdit, WorldGuard, Vault, Movecraft]
 

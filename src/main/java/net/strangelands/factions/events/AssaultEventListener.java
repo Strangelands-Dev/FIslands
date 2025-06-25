@@ -1,4 +1,4 @@
-package me.halfquark.fislands.events;
+package net.strangelands.factions.events;
 /*
 import java.util.ArrayList;
 import java.util.HashMap;

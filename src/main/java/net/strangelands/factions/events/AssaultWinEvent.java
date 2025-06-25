@@ -1,4 +1,4 @@
-package me.halfquark.fislands.events;
+package net.strangelands.factions.events;
 /*
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;

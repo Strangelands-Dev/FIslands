@@ -1,25 +1,25 @@
-package me.halfquark.fislands;
+package net.strangelands.factions;
 
 import java.util.logging.Level;
 
+import net.strangelands.factions.classes.Config;
+import net.strangelands.factions.classes.Faction;
+import net.strangelands.factions.classes.Island;
+import net.strangelands.factions.classes.Member;
+import net.strangelands.factions.classes.Rank;
+import net.strangelands.factions.commands.FCommandEx;
+import net.strangelands.factions.timers.DailyTimer;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.serialization.ConfigurationSerialization;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.halfquark.fislands.classes.Config;
-import me.halfquark.fislands.classes.Faction;
-import me.halfquark.fislands.classes.Island;
-import me.halfquark.fislands.classes.Member;
-import me.halfquark.fislands.classes.Rank;
-import me.halfquark.fislands.commands.FCommandEx;
-import me.halfquark.fislands.commands.IsCommandEx;
-import me.halfquark.fislands.timers.DailyTimer;
+import net.strangelands.factions.commands.IsCommandEx;
 import net.milkbowl.vault.economy.Economy;
 
-public class FIslands extends JavaPlugin {
+public class Factions extends JavaPlugin {
 	
-	public static FIslands instance;
+	public static Factions instance;
 	public Economy economy;
 	public DailyTimer dailyTimer;
 	public static Config islandsConfig;

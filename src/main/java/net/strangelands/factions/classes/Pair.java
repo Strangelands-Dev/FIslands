@@ -1,4 +1,4 @@
-package me.halfquark.fislands.classes;
+package net.strangelands.factions.classes;
 
 public class Pair<t1, t2> {
 	public t1 F;

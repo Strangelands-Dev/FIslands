@@ -1,4 +1,4 @@
-package me.halfquark.fislands.utils;
+package net.strangelands.factions.utils;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -7,7 +7,7 @@ import java.util.Queue;
 import org.bukkit.Location;
 import org.bukkit.Material;
 
-import me.halfquark.fislands.classes.Pair;
+import net.strangelands.factions.classes.Pair;
 
 public class BlockQuery {
 	

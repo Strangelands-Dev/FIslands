@@ -1,4 +1,4 @@
-package me.halfquark.fislands.timers;
+package net.strangelands.factions.timers;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -10,22 +10,21 @@ import com.sk89q.worldedit.bukkit.BukkitAdapter;
 import com.sk89q.worldguard.WorldGuard;
 import com.sk89q.worldguard.protection.flags.Flags;
 import com.sk89q.worldguard.protection.regions.RegionContainer;
+import net.strangelands.factions.classes.Config;
+import net.strangelands.factions.classes.Island;
+import net.strangelands.factions.utils.IslandBoundary;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 
-import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
 import com.sk89q.worldguard.protection.flags.StateFlag;
 import com.sk89q.worldguard.protection.managers.RegionManager;
 
-import me.halfquark.fislands.FIslands;
-import me.halfquark.fislands.classes.Config;
-import me.halfquark.fislands.classes.Island;
-import me.halfquark.fislands.utils.IslandBoundary;
+import net.strangelands.factions.Factions;
 
 public class DailyTimer {
 	
-	private FIslands plugin;
+	private Factions plugin;
 	private FileConfiguration config;
 	//private Timer timer;
 	private Config islands;
@@ -33,10 +32,10 @@ public class DailyTimer {
 	private boolean pastMidDay;
 	
 	public DailyTimer(){
-		plugin = FIslands.instance;
+		plugin = Factions.instance;
 		config = plugin.getConfig();
-		islands = FIslands.islandsConfig;
-		upkeep = FIslands.upkeepConfig;
+		islands = Factions.islandsConfig;
+		upkeep = Factions.upkeepConfig;
 		//timer = new Timer();
 		Bukkit.getScheduler().scheduleSyncRepeatingTask(plugin, new Runnable() {
 		     @Override
